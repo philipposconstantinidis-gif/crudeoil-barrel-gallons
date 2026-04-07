@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Gallons in a Barrel of Crude Oil? — Visual Breakdown of 42 Gallons</title>
+    <meta name="description" content="A barrel of crude oil is 42 US gallons (159 litres). See exactly how many gallons of gasoline, diesel and jet fuel come out, with a visual breakdown and instant unit converter.">
+    <meta name="keywords" content="how many gallons in a barrel of crude oil, a barrel of crude oil is how many gallons, how many us gallons in a barrel of crude oil, how many litres in a barrel of oil, how many liters in a barrel of oil, what is crude oil, how is crude oil formed, what is crude oil used for, barrel of crude oil, how many gallons of crude oil are in a barrel, gallon in barrel of oil, m3 in barrel of oil, ton in barrel of oil, crude oil products">
+    <link rel="canonical" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #FAF7F2;
+            --paper: #FFFFFF;
+            --ink: #1A1A1A;
+            --ink-soft: #5C5751;
+            --accent: #C2410C;
+            --accent-soft: #FED7AA;
+            --line: #E8E0D5;
+            --line-strong: #1A1A1A;
+
+            /* Product colors */
+            --c-gasoline: #C2410C;
+            --c-diesel: #92400E;
+            --c-jet: #B45309;
+            --c-hgl: #D97706;
+            --c-heavy: #4A4039;
+            --c-asphalt: #1F1B17;
+            --c-other: #78716C;
+            --c-petrochem: #A16207;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 24px 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .brand {
+            font-family: 'Fraunces', serif;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+        nav .brand span { color: var(--accent); }
+        nav .meta {
+            font-size: 11px;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+
+        .ad-slot {
+            display: none;
+            max-width: 920px;
+            margin: 0 auto 8px;
+            padding: 0 24px;
+        }
+        .ad-slot-inner {
+            background: var(--paper);
+            border: 1px dashed var(--line);
+            border-radius: 8px;
+            padding: 18px;
+            text-align: center;
+            color: var(--ink-soft);
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 56px 24px 32px;
+        }
+        .hero .eyebrow {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(36px, 6vw, 60px);
+            font-weight: 500;
+            line-height: 1.05;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+            max-width: 760px;
+        }
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent);
+        }
+        .hero p {
+            font-size: 17px;
+            color: var(--ink-soft);
+            max-width: 600px;
+            line-height: 1.65;
+        }
+
+        /* ── MAIN VISUAL SECTION ── */
+        .visual-section {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 24px 24px 24px;
+        }
+        .visual-card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.03), 0 30px 60px -20px rgba(0,0,0,0.08);
+        }
+        .visual-header {
+            padding: 32px 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 24px;
+        }
+        .visual-header h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 26px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+        }
+        .barrel-input-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .barrel-input-wrap label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--ink-soft);
+        }
+        .barrel-input-wrap input {
+            width: 80px;
+            padding: 8px 12px;
+            font-family: 'Fraunces', serif;
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            border: 2px solid var(--line-strong);
+            border-radius: 4px;
+            background: var(--bg);
+            outline: none;
+            -moz-appearance: textfield;
+        }
+        .barrel-input-wrap input::-webkit-outer-spin-button,
+        .barrel-input-wrap input::-webkit-inner-spin-button {
+            -webkit-appearance: none; margin: 0;
+        }
+        .barrel-input-wrap input:focus {
+            border-color: var(--accent);
+        }
+
+        .visual-body {
+            padding: 32px 40px 40px;
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        /* ── BARREL SVG ── */
+        .barrel-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+        .barrel-wrap svg {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        .barrel-stats {
+            text-align: center;
+        }
+        .barrel-stats .total {
+            font-family: 'Fraunces', serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1;
+        }
+        .barrel-stats .total-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--ink-soft);
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        /* ── BREAKDOWN BARS ── */
+        .breakdown {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .product-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+            align-items: baseline;
+        }
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .product-name-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .product-name {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--ink);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .product-swatch {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .product-amount {
+            font-family: 'Fraunces', serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--ink);
+            white-space: nowrap;
+        }
+        .product-amount .pct {
+            font-size: 11px;
+            color: var(--ink-soft);
+            font-weight: 500;
+            margin-left: 4px;
+        }
+        .bar-track {
+            height: 8px;
+            background: var(--line);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .bar-fill {
+            height: 100%;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 2px;
+        }
+
+        .gain-note {
+            margin-top: 24px;
+            padding: 14px 18px;
+            background: var(--accent-soft);
+            border-left: 3px solid var(--accent);
+            font-size: 12px;
+            color: var(--ink);
+            line-height: 1.6;
+        }
+        .gain-note strong { font-weight: 700; }
+
+        /* ── UNIT TOGGLE ── */
+        .unit-toggle-wrap {
+            padding: 0 40px 24px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .unit-toggle-wrap .label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--ink-soft);
+            margin-right: 8px;
+        }
+        .unit-btn {
+            padding: 8px 16px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            cursor: pointer;
+            background: var(--paper);
+            color: var(--ink-soft);
+            transition: all 0.15s;
+        }
+        .unit-btn:hover { color: var(--ink); border-color: var(--ink); }
+        .unit-btn.active {
+            background: var(--ink);
+            color: var(--paper);
+            border-color: var(--ink);
+        }
+
+        /* ── INFO SECTION ── */
+        .info-section {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 24px 24px 48px;
+        }
+        .info-card {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            padding: 40px;
+        }
+        .info-card h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+        }
+        .info-card p {
+            color: var(--ink-soft);
+            font-size: 15px;
+            margin-bottom: 16px;
+            line-height: 1.75;
+        }
+        .info-card h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 28px 0 12px;
+            color: var(--ink);
+        }
+        .quick-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .fact-tile {
+            border: 1px solid var(--line);
+            padding: 20px;
+            background: var(--bg);
+        }
+        .fact-tile .fact-num {
+            font-family: 'Fraunces', serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .fact-tile .fact-label {
+            font-size: 12px;
+            color: var(--ink-soft);
+            line-height: 1.5;
+        }
+
+        /* ── FAQ ── */
+        .faq-item { margin-bottom: 4px; }
+        .faq-item summary {
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 18px 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid var(--line);
+        }
+        .faq-item[open] summary { border-bottom-color: var(--ink); }
+        .faq-item summary::-webkit-details-summary { display: none; }
+        .faq-item summary::before {
+            content: '+';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px; height: 24px;
+            border: 1px solid var(--line-strong);
+            color: var(--ink);
+            font-weight: 400;
+            font-size: 16px;
+            flex-shrink: 0;
+            font-family: 'Fraunces', serif;
+        }
+        .faq-item[open] summary::before {
+            content: '−';
+            background: var(--ink);
+            color: var(--paper);
+        }
+        .faq-item .faq-answer {
+            padding: 14px 0 18px 36px;
+            color: var(--ink-soft);
+            font-size: 14px;
+            line-height: 1.75;
+            border-bottom: 1px solid var(--line);
+        }
+
+        footer {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            text-align: center;
+            font-size: 11px;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 700px) {
+            .visual-header, .visual-body, .unit-toggle-wrap { padding-left: 24px; padding-right: 24px; }
+            .visual-body {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .barrel-wrap svg { max-width: 160px; }
+            .info-card { padding: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <span class="brand">The <span>Barrel</span></span>
+    <span class="meta">Crude Oil Breakdown</span>
+</nav>
+
+<div class="ad-slot"><div class="ad-slot-inner">Ad Space</div></div>
+
+<section class="hero">
+    <div class="eyebrow">Refined Products Breakdown</div>
+    <h1>How many gallons are in <em>a barrel of crude oil?</em></h1>
+    <p>A standard barrel of crude oil is exactly <strong>42 US gallons</strong> (159 litres, or 35 UK gallons). When refined, those 42 gallons become about 45 gallons of finished products — gasoline, diesel, jet fuel, and dozens more. Here's the full breakdown.</p>
+</section>
+
+<section class="visual-section">
+    <div class="visual-card">
+        <div class="visual-header">
+            <h2>Barrel Breakdown</h2>
+            <div class="barrel-input-wrap">
+                <label>Barrels:</label>
+                <input type="number" id="barrels" value="1" min="1" max="10000" step="1" oninput="render()">
+            </div>
+        </div>
+
+        <div class="visual-body">
+            <div class="barrel-wrap">
+                <svg viewBox="0 0 160 220" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Barrel body with stacked product colors -->
+                    <defs>
+                        <clipPath id="barrelClip">
+                            <path d="M 30 30 Q 30 20 80 20 Q 130 20 130 30 L 138 180 Q 138 200 80 200 Q 22 200 22 180 Z"/>
+                        </clipPath>
+                    </defs>
+
+                    <!-- Background fill (stacked segments) -->
+                    <g clip-path="url(#barrelClip)">
+                        <!-- Gasoline 45% -->
+                        <rect x="0" y="20" width="160" height="81" fill="#C2410C"/>
+                        <!-- Diesel 27% -->
+                        <rect x="0" y="101" width="160" height="49" fill="#92400E"/>
+                        <!-- Jet fuel 9% -->
+                        <rect x="0" y="150" width="160" height="16" fill="#B45309"/>
+                        <!-- HGL 4% -->
+                        <rect x="0" y="166" width="160" height="7" fill="#D97706"/>
+                        <!-- Petrochem 4% -->
+                        <rect x="0" y="173" width="160" height="7" fill="#A16207"/>
+                        <!-- Heavy/asphalt 6% -->
+                        <rect x="0" y="180" width="160" height="11" fill="#4A4039"/>
+                        <!-- Other 5% -->
+                        <rect x="0" y="191" width="160" height="9" fill="#78716C"/>
+                    </g>
+
+                    <!-- Barrel outline -->
+                    <path d="M 30 30 Q 30 20 80 20 Q 130 20 130 30 L 138 180 Q 138 200 80 200 Q 22 200 22 180 Z"
+                          fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linejoin="round"/>
+
+                    <!-- Top ellipse -->
+                    <ellipse cx="80" cy="22" rx="50" ry="8" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+
+                    <!-- Barrel bands -->
+                    <line x1="22" y1="65" x2="138" y2="65" stroke="#1A1A1A" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="22" y1="105" x2="138" y2="105" stroke="#1A1A1A" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="22" y1="145" x2="138" y2="145" stroke="#1A1A1A" stroke-width="1.5" opacity="0.6"/>
+
+                    <!-- Highlight on left -->
+                    <path d="M 32 35 Q 30 100 35 180" stroke="rgba(255,255,255,0.25)" stroke-width="6" fill="none" stroke-linecap="round"/>
+                </svg>
+                <div class="barrel-stats">
+                    <div class="total" id="total-input">42</div>
+                    <div class="total-label" id="total-input-label">US gallons in</div>
+                </div>
+                <div class="barrel-stats" style="margin-top:-8px;">
+                    <div class="total" id="total-output">45</div>
+                    <div class="total-label" id="total-output-label">refined products out</div>
+                </div>
+            </div>
+
+            <div class="breakdown" id="breakdown">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+
+        <div class="unit-toggle-wrap">
+            <span class="label">Show in:</span>
+            <button class="unit-btn active" onclick="setUnit('gallons')" id="btn-gallons">US Gallons</button>
+            <button class="unit-btn" onclick="setUnit('litres')" id="btn-litres">Litres</button>
+            <button class="unit-btn" onclick="setUnit('uk_gallons')" id="btn-uk_gallons">UK Gallons</button>
+            <button class="unit-btn" onclick="setUnit('m3')" id="btn-m3">Cubic Metres (m³)</button>
+        </div>
+
+        <div style="padding: 0 40px 32px;">
+            <div class="gain-note">
+                <strong>Why does 42 gallons in become 45 gallons out?</strong> This is called "processing gain." Refining splits crude into lighter products that have a lower density than the original liquid, increasing the total volume by about 7%. Other inputs like fuel ethanol and blending agents also contribute.
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="ad-slot" style="padding-top:24px;"><div class="ad-slot-inner">Ad Space</div></div>
+
+<section class="info-section">
+    <div class="info-card">
+        <h2>What is Crude Oil?</h2>
+        <p>Crude oil — also called petroleum — is a naturally occurring liquid mixture of hydrocarbons found beneath the Earth's surface. It's a fossil fuel formed over millions of years from the remains of ancient marine organisms (mostly algae and zooplankton) that settled on the bottom of seas and lakes, were buried under layers of sediment, and slowly transformed under intense heat and pressure.</p>
+        <p>In its raw form, crude oil isn't directly usable. It has to be refined into separate products through a process called fractional distillation, where it's heated in a tall column and the different hydrocarbon chains separate out at different temperatures. The result is everything from petrol and diesel to plastics, lubricants, asphalt, and even ingredients in cosmetics and medicines.</p>
+
+        <h3>How is crude oil formed?</h3>
+        <p>Crude oil forms over tens of millions of years. When ancient marine organisms died, they sank to the seabed and were covered by layers of mud and sediment. As more layers piled on top, the pressure and temperature increased. Over time — typically 10 to 200 million years — this organic matter slowly "cooked" into a waxy substance called kerogen, then into liquid hydrocarbons. The resulting crude oil migrates upward through porous rock until it gets trapped against an impermeable layer, forming the underground reservoirs that drilling rigs tap into today.</p>
+
+        <h3>What is crude oil used for?</h3>
+        <p>Most people associate crude oil with petrol and diesel — and rightly so, since transport fuels make up roughly 75% of refined output. But crude oil is also the raw material for thousands of other products: jet fuel, heating oil, propane, asphalt for roads, lubricants, plastics, synthetic fabrics like polyester, fertilisers, pesticides, paints, cosmetics, pharmaceuticals, and even chewing gum bases. Modern life is built on petroleum derivatives in ways most people never realise.</p>
+
+        <h2 style="margin-top:36px;">Quick Facts About a Barrel of Crude Oil</h2>
+
+        <div class="quick-facts">
+            <div class="fact-tile">
+                <div class="fact-num">42</div>
+                <div class="fact-label">US gallons in one standard oil barrel</div>
+            </div>
+            <div class="fact-tile">
+                <div class="fact-num">159</div>
+                <div class="fact-label">Litres in one barrel of crude oil</div>
+            </div>
+            <div class="fact-tile">
+                <div class="fact-num">35</div>
+                <div class="fact-label">UK (imperial) gallons per barrel</div>
+            </div>
+            <div class="fact-tile">
+                <div class="fact-num">~136</div>
+                <div class="fact-label">Kilograms — the weight of one barrel</div>
+            </div>
+        </div>
+
+        <h3>Why is a barrel 42 gallons?</h3>
+        <p>The 42-gallon size dates back to 1866, in the early days of the Pennsylvania oil rush. Producers used wooden whisky barrels (40 gallons) and added 2 gallons of "leakage allowance" so buyers could be sure they were getting a full 40 gallons after spillage. The 42-gallon standard stuck and became the international unit for crude oil even though physical wooden barrels stopped being used over a century ago. Today's "barrel" is purely a unit of measurement — crude is transported by pipeline, tanker and rail car.</p>
+
+        <h3>How much petrol/gasoline comes from one barrel?</h3>
+        <p>About 20 US gallons (75 litres) of gasoline come from a single 42-gallon barrel of crude oil — that's roughly 45% of the refined product. The exact amount varies by refinery and crude type. US refineries are tuned to maximise gasoline output, while European and Asian refineries typically produce more diesel and jet fuel from the same barrel.</p>
+
+        <h3>What about everything else?</h3>
+        <p>The remaining ~55% becomes diesel (~27%), jet fuel (~9%), hydrocarbon gas liquids like propane (~4%), petrochemical feedstocks for plastics and chemicals (~4%), heavy fuel oil and asphalt (~6%), and a long tail of other products including lubricants, waxes, kerosene and bitumen. Crude oil is so versatile that it's used in everything from medicines and cosmetics to crayons and tyres.</p>
+
+        <h2 style="margin-top:36px;">Frequently Asked Questions</h2>
+
+        <details class="faq-item">
+            <summary>A barrel of crude oil is how many gallons?</summary>
+            <div class="faq-answer">A barrel of crude oil is exactly 42 US gallons. This is the international standard unit used for trading and pricing crude oil worldwide. In other units, that's 159 litres, 35 UK (imperial) gallons, or 0.159 cubic metres.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How many US gallons are in a barrel of crude oil?</summary>
+            <div class="faq-answer">There are 42 US gallons in one barrel of crude oil. The 42-gallon size has been the standard since 1866, when American oil producers used wooden whisky barrels (40 gallons) plus 2 gallons of "leakage allowance" to guarantee buyers received the full amount.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How many litres are in a barrel of oil?</summary>
+            <div class="faq-answer">One barrel of crude oil contains exactly 158.987 litres, which is rounded to 159 litres in most reference materials. This equals 42 US gallons or roughly 35 UK (imperial) gallons.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How many cubic metres (m³) in a barrel of oil?</summary>
+            <div class="faq-answer">One barrel of crude oil equals 0.159 cubic metres (m³). To convert the other way, 1 cubic metre equals about 6.29 barrels. Cubic metres are commonly used for measuring oil volumes in scientific and industrial contexts, especially outside the US.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How many tons does a barrel of oil weigh?</summary>
+            <div class="faq-answer">A standard 42-gallon barrel of crude oil weighs approximately 0.136 metric tonnes (136 kg or 300 lbs). The exact weight depends on the density of the specific crude — lighter crudes like West Texas Intermediate weigh slightly less, while heavier crudes weigh more. For rough conversions, 1 metric tonne of crude oil equals about 7.33 barrels.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How many gallons of gasoline are in a barrel of oil?</summary>
+            <div class="faq-answer">A 42-gallon barrel of crude oil produces approximately 20 gallons of gasoline (about 75 litres) when refined in a typical US refinery. This is roughly 45% of the refined output. The exact amount varies depending on the type of crude and how the refinery is configured.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How can a 42-gallon barrel produce 45 gallons of products?</summary>
+            <div class="faq-answer">It seems impossible but it's real — it's called "processing gain." When crude oil is refined, the heavy hydrocarbon molecules are broken down into lighter ones. These lighter products take up more volume than the dense crude they came from, creating roughly 7% more liquid by volume. Refineries also add small amounts of other inputs like fuel ethanol and blending agents during the process.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How much does a barrel of oil weigh?</summary>
+            <div class="faq-answer">A standard 42-gallon barrel of crude oil weighs approximately 136 kilograms (300 pounds), though this varies based on the density of the specific crude. The density is measured using a scale called API gravity.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Are oil barrels actually still 42 gallons?</summary>
+            <div class="faq-answer">The 42-gallon "barrel" is now purely a unit of measurement. Real wooden barrels stopped being used over a century ago — modern crude oil is transported through pipelines, ocean tankers, and rail cars. But the 42-gallon unit stuck because it became the international standard for pricing and trading crude oil.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Why do US refineries make more gasoline than European ones?</summary>
+            <div class="faq-answer">US refineries are configured to maximise gasoline output because American consumers drive petrol cars more than diesel. European refineries produce more diesel because diesel cars and trucks dominate that market. The same barrel of crude can be refined into different proportions depending on what the local market needs.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is in the "other" 5% of a barrel?</summary>
+            <div class="faq-answer">The "other" category includes a long list of useful products: lubricants and motor oil, waxes (for candles, food packaging, and crayons), petroleum coke (used in steelmaking), naphtha (a chemical solvent), still gas (burned for refinery energy), and bitumen for waterproofing. Petroleum is in thousands of everyday products you wouldn't immediately associate with oil.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How long does it take to refine a barrel of crude oil?</summary>
+            <div class="faq-answer">A modern refinery processes a 30,000-barrel batch of crude in roughly 12 to 24 hours. Refineries operate continuously, 24 hours a day, 365 days a year. From the moment crude is extracted from the ground to the time its products reach consumers, the typical lag is one to three months depending on the destination product.</div>
+        </details>
+    </div>
+</section>
+
+<div class="ad-slot" style="margin-bottom:16px;"><div class="ad-slot-inner">Ad Space</div></div>
+
+<footer>
+    &copy; 2026 The Barrel — Sources: EIA, Canadian Association of Petroleum Producers, Energy Education
+</footer>
+
+<script>
+// Standard breakdown per 1 barrel of crude (42 US gal in → 45 US gal out)
+const PRODUCTS = [
+    { key: 'gasoline', name: 'Gasoline / Petrol', pct: 45, color: '#C2410C' },
+    { key: 'diesel', name: 'Diesel & Heating Oil', pct: 27, color: '#92400E' },
+    { key: 'jet', name: 'Jet Fuel & Kerosene', pct: 9, color: '#B45309' },
+    { key: 'hgl', name: 'Hydrocarbon Gas Liquids (LPG, Propane)', pct: 4, color: '#D97706' },
+    { key: 'petrochem', name: 'Petrochemical Feedstocks', pct: 4, color: '#A16207' },
+    { key: 'heavy', name: 'Heavy Fuel Oil & Asphalt', pct: 6, color: '#4A4039' },
+    { key: 'other', name: 'Other (Lubricants, Wax, Coke)', pct: 5, color: '#78716C' }
+];
+
+// Per 1 barrel: 42 US gal in, 45 US gal out, 159 L in, 170 L out, 35 UK gal in, 37.5 UK gal out
+const CONVERSIONS = {
+    gallons: { in: 42, out: 45, label: 'US gallons', short: 'gal' },
+    litres: { in: 159, out: 170, label: 'litres', short: 'L' },
+    uk_gallons: { in: 35, out: 37.5, label: 'UK gallons', short: 'gal' },
+    m3: { in: 0.159, out: 0.170, label: 'cubic metres', short: 'm³' }
+};
+
+let currentUnit = 'gallons';
+
+function setUnit(unit) {
+    currentUnit = unit;
+    document.querySelectorAll('.unit-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('btn-' + unit).classList.add('active');
+    render();
+}
+
+function fmt(num) {
+    if (num >= 1000) return num.toLocaleString('en', { maximumFractionDigits: 0 });
+    if (num >= 100) return num.toFixed(0);
+    if (num >= 10) return num.toFixed(1);
+    if (num >= 1) return num.toFixed(2);
+    return num.toFixed(3);
+}
+
+function render() {
+    const barrels = parseFloat(document.getElementById('barrels').value) || 1;
+    const conv = CONVERSIONS[currentUnit];
+
+    const totalIn = conv.in * barrels;
+    const totalOut = conv.out * barrels;
+
+    document.getElementById('total-input').textContent = fmt(totalIn);
+    document.getElementById('total-input-label').textContent = conv.label + ' in';
+    document.getElementById('total-output').textContent = fmt(totalOut);
+    document.getElementById('total-output-label').textContent = conv.label + ' out';
+
+    // Build product rows
+    const html = PRODUCTS.map(p => {
+        const amount = (totalOut * p.pct / 100);
+        return `
+            <div class="product-info">
+                <div class="product-name-row">
+                    <span class="product-name">
+                        <span class="product-swatch" style="background:${p.color}"></span>
+                        ${p.name}
+                    </span>
+                    <span class="product-amount">${fmt(amount)} ${conv.short}<span class="pct">${p.pct}%</span></span>
+                </div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width:${p.pct * 2.2}%;background:${p.color}"></div>
+                </div>
+            </div>
+        `;
+    }).join('');
+    document.getElementById('breakdown').innerHTML = html;
+}
+
+render();
+</script>
+
+</body>
+</html>
