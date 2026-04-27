@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3836314846497472"
-     crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Many Gallons in a Barrel of Crude Oil? — Visual Breakdown of 42 Gallons</title>
     <meta name="description" content="A barrel of crude oil is 42 US gallons (159 litres). See exactly how many gallons of gasoline, diesel and jet fuel come out, with a visual breakdown and instant unit converter.">
     <meta name="keywords" content="how many gallons in a barrel of crude oil, a barrel of crude oil is how many gallons, how many us gallons in a barrel of crude oil, how many litres in a barrel of oil, how many liters in a barrel of oil, what is crude oil, how is crude oil formed, what is crude oil used for, barrel of crude oil, how many gallons of crude oil are in a barrel, gallon in barrel of oil, m3 in barrel of oil, ton in barrel of oil, crude oil products">
-    <link rel="canonical" href="">
+    <link rel="canonical" href="https://barrelgallons.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -53,20 +51,22 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
         }
         nav .brand {
             font-family: 'Fraunces', serif;
             font-size: 18px;
             font-weight: 600;
             letter-spacing: -0.3px;
+            text-decoration: none;
+            color: var(--ink);
         }
         nav .brand span { color: var(--accent); }
-        nav .meta {
-            font-size: 11px;
-            color: var(--ink-soft);
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-        }
+        nav .nav-links { display: flex; gap: 24px; align-items: center; }
+        nav .nav-link { font-size: 13px; font-weight: 500; color: var(--ink-soft); text-decoration: none; transition: color 0.15s; }
+        nav .nav-link:hover { color: var(--ink); }
+        nav .nav-link.active { color: var(--accent); font-weight: 600; }
 
         .ad-slot {
             display: none;
@@ -449,8 +449,13 @@
 <body>
 
 <nav>
-    <span class="brand">The <span>Barrel</span></span>
-    <span class="meta">Crude Oil Breakdown</span>
+    <a href="/" class="brand">The <span>Barrel</span></a>
+    <div class="nav-links">
+        <a href="/" class="nav-link active">Breakdown</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="/privacy.html" class="nav-link">Privacy</a>
+    </div>
 </nav>
 
 <div class="ad-slot"><div class="ad-slot-inner">Ad Space</div></div>
@@ -656,6 +661,12 @@
 <div class="ad-slot" style="margin-bottom:16px;"><div class="ad-slot-inner">Ad Space</div></div>
 
 <footer>
+    <div style="margin-bottom: 12px;">
+        <a href="/" style="color: var(--ink-soft); margin: 0 12px; text-decoration: none;">Breakdown</a>
+        <a href="/about.html" style="color: var(--ink-soft); margin: 0 12px; text-decoration: none;">About</a>
+        <a href="/contact.html" style="color: var(--ink-soft); margin: 0 12px; text-decoration: none;">Contact</a>
+        <a href="/privacy.html" style="color: var(--ink-soft); margin: 0 12px; text-decoration: none;">Privacy</a>
+    </div>
     &copy; 2026 The Barrel — Sources: EIA, Canadian Association of Petroleum Producers, Energy Education
 </footer>
 
